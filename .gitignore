@@ -2,6 +2,12 @@
 */
 
 # Ignore symlinked folders
+!dataset/
+
+# Ignore all the .cfg files
+*.cfg
+
+# Ignore symlinked folder
 /lib64
 
 # Except for the dataset folder

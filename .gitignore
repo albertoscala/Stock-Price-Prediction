@@ -2,7 +2,7 @@
 */
 
 # Ignore symlinked folders
-./lib64
+/lib64
 
 # Except for the dataset folder
 !dataset/

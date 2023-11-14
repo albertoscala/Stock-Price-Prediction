@@ -4,8 +4,8 @@
 # Except for the dataset folder
 !dataset/
 
-# Ignore the lib64 folder
-lib64/
+# Ignore all the soft links
+*.lnk
 
 # Ignore all the .cfg files
 *.cfg

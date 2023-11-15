@@ -36,6 +36,8 @@ Confronted with the imperfections in our dataset, two viable options emerge:
 - **Removal of Rows**: Eliminating rows containing null values.
 - **Mean Replacement**: Substituting null values with the mean of the respective column.
 
+Opting for data continuity, I chose the latter approach, executing `df.fillna(df.mean(), inplace=True)`. Subsequently, a reevaluation via the null value check `df.isnull().values.any()` confirms the successful mitigation of the issue, with a `False` return indicating the absence of null values in the dataset. This strategic choice ensures the preservation of data integrity while fostering a more seamless dataset for subsequent phases.
+
 ### Preparing training
 
 ### Building the model

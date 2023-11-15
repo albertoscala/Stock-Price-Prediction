@@ -12,6 +12,3 @@
 
 # Except for the dataset folder
 !dataset/
-
-# Ignore all the .cfg files
-*.cfg

@@ -38,7 +38,15 @@ Confronted with the imperfections in our dataset, two viable options emerge:
 
 Opting for data continuity, I chose the latter approach, executing `df.fillna(df.mean(), inplace=True)`. Subsequently, a reevaluation via the null value check `df.isnull().values.any()` confirms the successful mitigation of the issue, with a `False` return indicating the absence of null values in the dataset. This strategic choice ensures the preservation of data integrity while fostering a more seamless dataset for subsequent phases.
 
+With missing data addressed, the subsequent imperative is data normalization, an integral step in preparing our dataset for effective modeling. Employing the MaxMin technique, we scale the data to a standardized range. This technique ensures uniformity and comparability across different features, enhancing the model's ability to converge during training.
+
+The process of data scaling is executed with utmost simplicity. We extract the relevant data `df[features]` and seamlessly integrate it into the scaler through `scaler.fit_transform(df[features])`. This concise yet pivotal step normalizes our dataset, rendering it amenable for optimal model training and subsequent analysis.
+
 ### Preparing training
+
+In the context of time series data, the conventional approach to data splitting is no longer arbitrary. Recognizing the inherent temporal dependencies, we adopt a meticulous strategy. Leveraging the `TimeSeriesSplit` function from the `scikit-learn` library, we ensure that our data division into training and test sets maintains the chronological order of observations.
+
+This involves a thoughtful segmentation of the time series data for both the input features and the corresponding expected outputs. By aligning the temporal order, we adhere to a more realistic representation of real-world scenarios, crucial for robust model evaluation and predictive accuracy.
 
 ### Building the model
 

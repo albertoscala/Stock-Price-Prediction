@@ -29,6 +29,13 @@ Embarking on the journey of machine learning necessitates a foundational underst
 
 ### Preparing the dataset
 
+The initial phase involves meticulous cleaning and addressing inherent issues within the dataset. In this particular instance, all columns are deemed essential for our model, obviating the need for removal. The next critical check involves the identification of `null` values within the dataset using `df.isnull().values.any()`. A `True` return signifies the presence of `null` values, prompting a decision-making juncture.
+
+Confronted with the imperfections in our dataset, two viable options emerge:
+
+- **Removal of Rows**: Eliminating rows containing null values.
+- **Mean Replacement**: Substituting null values with the mean of the respective column.
+
 ### Preparing training
 
 ### Building the model

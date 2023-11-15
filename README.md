@@ -50,9 +50,29 @@ This involves a thoughtful segmentation of the time series data for both the inp
 
 ### Building the model
 
-### Prediction and analysis
+We arrive now to the last part of this project that is actually the most important one: building the model. In this case, we will use a Long Short-Term Memory (LSTM) model, a type of recurrent neural network (RNN) that is particularly well suited to predict time series data.
+
+To the model we add two layers:
+- First layer is an LSTM layer with 128 units, with ReLU (Rectified Linear Unit) as activation function.
+- Second layer is a Dense layer with 1 unit, with linear activation function. It means that we will only get one output value, which is exactly what we need, since our task was to predict a single future price.
+
+Then to compile the model we use the Adam optimizer, which is a popular choice for neural networks, and the Mean Squared Error (MSE) as loss function, which is also a popular choice when we have regression problems.
+
+Once we are done with the model, we can train it using the `model.fit()` method. We will train it for 100 epochs, with a batch size of 16.
+
+### Prediction
+
+Now to predict the data we simply do `model.predict()`. Then we can plot the predicted data against the actual data to see how well our model performed.
+
+## Conclusions
 
 ![graph](https://github.com/albertoscala/stock-price-prediction/blob/main/images/graph.png)
+
+A visual inspection of the graph attests to the commendable performance of our model in predicting stock prices. The predicted data aligns remarkably well with the actual data, demonstrating a close correspondence with only minor deviations.
+
+The primary objective of this endeavor was to discern trends that could inform more informed decision-making. The model, in this context, proves adept at capturing and mirroring these trends. Its capacity to closely track actual stock prices substantiates its utility in providing valuable insights for decision support.
+
+In essence, the model effectively fulfills the initial intent of understanding and interpreting trends, laying a solid foundation for enhanced decision-making in the realm of stock market analysis.
 
 ## License
 

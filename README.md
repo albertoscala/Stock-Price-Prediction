@@ -1,5 +1,19 @@
 # Stock Price Prediction
-This project focuses on using machine learning to predict stock price movements. We employ various algorithms, including LSTM and Random Forest, to create accurate models based on historical data and financial features.
+This repository, was created with a straightforward objective: to comprehend the mechanics of Long Short-Term Memory (LSTM) models and their practical implementation. Specifically, the focus here is on predicting the adjusted close prices of NVIDIA stocks.
+
+## Installation
+
+## Implementation
+
+### Understanding the data
+
+### Preparing the dataset
+
+### Preparing training
+
+### Building the model
+
+### Prediction and analysis
 
 ## License
 

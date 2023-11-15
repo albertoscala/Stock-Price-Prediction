@@ -66,7 +66,9 @@ Now to predict the data we simply do `model.predict()`. Then we can plot the pre
 
 ## Conclusions
 
-![graph](https://github.com/albertoscala/stock-price-prediction/blob/main/images/graph.png)
+<p align="center">
+  <img src="https://github.com/albertoscala/stock-price-prediction/blob/main/images/graph.png" alt="Comparison graph"/>
+</p>
 
 A visual inspection of the graph attests to the commendable performance of our model in predicting stock prices. The predicted data aligns remarkably well with the actual data, demonstrating a close correspondence with only minor deviations.
 

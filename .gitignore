@@ -1,14 +1,14 @@
 # Ignore all folders
 */
 
-# Ignore symlinked folders
+# Except for the dataset folder
 !dataset/
+
+# And for the images folder
+!images/
 
 # Ignore all the .cfg files
 *.cfg
 
 # Ignore symlinked folder
 /lib64
-
-# Except for the dataset folder
-!dataset/

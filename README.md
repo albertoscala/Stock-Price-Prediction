@@ -52,6 +52,8 @@ This involves a thoughtful segmentation of the time series data for both the inp
 
 ### Prediction and analysis
 
+![comparison](https://github.com/albertoscala/stock-price-prediction/assets/31989626/e1d47c6a-db2c-4c77-8092-6e07068d87c2)
+
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)

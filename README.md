@@ -19,13 +19,13 @@ In this section, I will provide a detailed walkthrough of the implementation ste
 
 Embarking on the journey of machine learning necessitates a foundational understanding of the dataset. Within this context, our dataset comprises seven distinct columns, each offering crucial insights:
 
-- Date: A straightforward timestamp denoting each data point.
-- Open: Reflecting the opening price of the stock for a given day.
-- High: Signifying the peak price reached by the stock on that particular day.
-- Low: Denoting the lowest recorded price of the stock during the day.
-- Close: Indicating the closing price of the stock at the end of the trading day.
-- Adjusted Close: Representing the closing price adjusted for dividends.
-- Volume: Offering a measure of the total trading activity for the day.
+- **Date**: A straightforward timestamp denoting each data point.
+- **Open**: Reflecting the opening price of the stock for a given day.
+- **High**: Signifying the peak price reached by the stock on that particular day.
+- **Low**: Denoting the lowest recorded price of the stock during the day.
+- **Close**: Indicating the closing price of the stock at the end of the trading day.
+- **Adjusted Close**: Representing the closing price adjusted for dividends.
+- **Volume**: Offering a measure of the total trading activity for the day.
 
 ### Preparing the dataset
 
